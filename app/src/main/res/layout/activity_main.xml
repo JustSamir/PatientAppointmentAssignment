@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#ACAFAC">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:layout_marginBottom="20dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxStrokeColor="#0000"
+                android:theme="@style/TextInputLayoutStyle"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                app:hintTextAppearance="@color/black">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/Name"
+                    android:hint="@string/PleaseEnterYourName"
+                    android:drawableStart="@drawable/ic_profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="10dp"
+                    android:textSize="18sp"
+                    android:background="#30ffffff"
+                    android:textColor="@color/black"
+                    android:textColorHint="#30317773"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxStrokeColor="#0000"
+                android:theme="@style/TextInputLayoutStyle"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                app:hintTextAppearance="@color/black">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/DocName"
+                    android:hint="@string/DoctorName"
+                    android:drawableStart="@drawable/ic_book"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="10dp"
+                    android:inputType="textEmailAddress"
+                    android:textSize="18sp"
+                    android:background="#30ffffff"
+                    android:textColor="@color/black"
+                    android:textColorHint="#30317773" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxStrokeColor="#0000"
+                android:theme="@style/TextInputLayoutStyle"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                app:hintTextAppearance="@color/black">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/LoginEmailID"
+                    android:hint="@string/PleaseEnterYourEmail"
+                    android:drawableStart="@drawable/ic_mail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="10dp"
+                    android:inputType="textEmailAddress"
+                    android:textSize="18sp"
+                    android:background="#30ffffff"
+                    android:textColor="@color/black"
+                    android:textColorHint="#30317773"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxStrokeColor="@color/black"
+                android:theme="@style/TextInputLayoutStyle"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                app:hintTextAppearance="@color/black">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/Date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_edit"
+                    android:hint="@string/DateHere"
+                    android:drawablePadding="10dp"
+                    android:background="#30ffffff"
+                    android:textColor="@color/black"
+                    android:textColorHint="#30ffffff"
+                    android:textSize="18sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxStrokeColor="#0000"
+                android:theme="@style/TextInputLayoutStyle"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                app:hintTextAppearance="@color/black">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/Condition"
+                    android:hint="@string/WhySick"
+                    android:drawableStart="@drawable/ic_health"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="10dp"
+                    android:inputType="textEmailAddress"
+                    android:textSize="18sp"
+                    android:background="#30ffffff"
+                    android:textColor="@color/black"
+                    android:textColorHint="#30317773" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <Button
+                android:id="@+id/RegisterButtonID2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/BookNow"
+                android:textAllCaps="false"
+                android:layout_margin="10dp"
+                android:textSize="20sp"
+                android:layout_gravity="center"
+                android:background="#30ffffff"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/black"/>
+
+            <TextView
+                android:id="@+id/DoctorLoginQS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/LogoutHere"
+                android:textAllCaps="false"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

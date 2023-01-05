@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DoctorRegistration"
+    android:background="#ACAFAC">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        
+
+        <TextView
+            android:id="@+id/LogoTitleID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/DoctorRegistration"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/PFP"
+            app:civ_border_width="2dp"
+            android:layout_gravity="center"
+            app:civ_border_color="@color/black"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/profile_image"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:layout_marginBottom="20dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxStrokeColor="#0000"
+                android:theme="@style/TextInputLayoutStyle"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                app:hintTextAppearance="@color/black">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/RegisterName"
+                    android:hint="@string/PleaseEnterYourName"
+                    android:drawableStart="@drawable/ic_profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="10dp"
+                    android:textSize="18sp"
+                    android:background="#30ffffff"
+                    android:textColor="@color/black"
+                    android:textColorHint="#30317773"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxStrokeColor="#0000"
+                android:theme="@style/TextInputLayoutStyle"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                app:hintTextAppearance="@color/black">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/RegisterNumber"
+                android:hint="@string/PleaseEnterYourIDNum"
+                android:drawableStart="@drawable/ic_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:drawablePadding="10dp"
+                android:textSize="18sp"
+                android:background="#30ffffff"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxStrokeColor="#0000"
+                android:theme="@style/TextInputLayoutStyle"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                app:hintTextAppearance="@color/black">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/RegisterPhoneNumber"
+                android:hint="@string/PleaseEnterYourPhoneNumber"
+                android:drawableStart="@drawable/ic_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:drawablePadding="10dp"
+                android:textSize="18sp"
+                android:background="#30ffffff"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Spinner
+                android:id="@+id/AvailabilitySP"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:popupBackground="@color/white"
+                android:entries="@array/TimeFrames"
+                android:layout_marginStart="9dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"/>
+
+            <Spinner
+                android:id="@+id/DepartmentSP"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:popupBackground="@color/white"
+                android:entries="@array/Departments"
+                android:layout_marginStart="9dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"/>
+
+            <Spinner
+                android:id="@+id/SpecializationSP"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:popupBackground="@color/white"
+                android:entries="@array/Specialization"
+                android:layout_marginStart="9dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"/>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxStrokeColor="#0000"
+                android:theme="@style/TextInputLayoutStyle"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                app:hintTextAppearance="@color/black">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/LoginEmailID"
+                    android:hint="@string/PleaseEnterYourEmail"
+                    android:drawableStart="@drawable/ic_mail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="10dp"
+                    android:inputType="textEmailAddress"
+                    android:textSize="18sp"
+                    android:background="#30ffffff"
+                    android:textColor="@color/black"
+                    android:textColorHint="#30317773" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxStrokeColor="@color/black"
+                android:theme="@style/TextInputLayoutStyle"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                app:hintTextAppearance="@color/black">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/LoginPasswordID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_lock"
+                    android:hint="@string/PleaseEnterYourPassword"
+                    android:inputType="textPassword"
+                    android:drawablePadding="10dp"
+                    android:background="#30ffffff"
+                    android:textColor="@color/black"
+                    android:textColorHint="#30ffffff"
+                    android:textSize="18sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/RegisterButtonID2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Register"
+                android:textAllCaps="false"
+                android:layout_margin="10dp"
+                android:textSize="20sp"
+                android:layout_gravity="center"
+                android:background="#30ffffff"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/black"/>
+
+            <TextView
+                android:id="@+id/DoctorLoginQS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/LoginClick"
+                android:textAllCaps="false"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,59 @@
+<resources>
+    /All the strings used within the application:
+    <string name="app_name">PatientAppointmentAssignment</string>
+    <string name="WelcomeMessage">Welcome to Book with Care</string>
+    <string name="LoginClick">Click here to Login</string>
+    <string name="DoctorRegistration">Doctor Registration</string>
+    <string name="PleaseEnterYourEmail">Enter Your Email</string>
+    <string name="logo">Logo</string>
+    <string name="PleaseEnterYourPassword">Enter Your Password</string>
+    <string name="Login">Login</string>
+    <string name="ClickHeretoRegister">Click here to Register.</string>
+    <string name="Administrator">Administrator</string>
+    <string name="ChooseAnOption">Choose an option</string>
+    <string name="PatientRegistration">Patient Registration</string>
+    <string name="PatientRG">Patient Registration</string>
+    <string name="PleaseEnterYourName">Enter Your Full Name</string>
+    <string name="PleaseEnterYourIDNum">Enter ID Number</string>
+    <string name="PleaseEnterYourPhoneNumber">Enter Phone Number</string>
+    <string name="Register">Register Now!</string>
+    <string name="LogoutHere">Logout Here</string>
+    <string name="BookNow">Book Now</string>
+    <string name="WhySick">Condition</string>
+    <string name="DoctorName">Doctor Name</string>
+    <string name="DateHere">Appointment Date</string>
+
+    /Time-Frame For Doctors:
+    <string-array name="TimeFrames">
+        <item>Availability</item>
+        <item>8–10 AM</item>
+        <item>10–12 AM</item>
+        <item>12–2 PM</item>
+        <item>2–4 PM</item>
+        <item>4–6 PM</item>
+        <item>6–8 PM</item>
+        <item>8–10 PM</item>
+        <item>10–11 AM</item>
+    </string-array>
+
+    /Departments For Doctors:
+    <string-array name="Departments">
+        <item>Select Department</item>
+        <item>Check-up</item>
+        <item>Dentistry</item>
+        <item>Surgery</item>
+        <item>Psychology</item>
+        <item>DNA</item>
+    </string-array>
+
+    /Specialization For Doctors:
+    <string-array name="Specialization">
+        <item>Select Department</item>
+        <item>General</item>
+        <item>Dermatologists</item>
+        <item>Allergists</item>
+        <item>Psychologist</item>
+        <item>Clinical</item>
+    </string-array>
+
+</resources>

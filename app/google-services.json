@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "702327602919",
+    "firebase_url": "https://samirassignment-57cbc-default-rtdb.firebaseio.com",
+    "project_id": "samirassignment-57cbc",
+    "storage_bucket": "samirassignment-57cbc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:702327602919:android:5970f0368154409b582c42",
+        "android_client_info": {
+          "package_name": "com.example.patientappointmentassignment"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "702327602919-j3pb7rcmbsavas8fesrmqoc87jum0bln.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDmn7eDMh2bpdAcSpxdEC80VDFS3t6h-WQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "702327602919-j3pb7rcmbsavas8fesrmqoc87jum0bln.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
